@@ -1,0 +1,26 @@
+<h3>Usuarios</h3>
+
+<div class="form-group">
+  <label for="usuarioSeleccionado">Usuario:</label>
+  <select id="usuarioSeleccionado" class="form-control" [(ngModel)]="usuarioSeleccionado" (change)="cambiarUsuarioSeleccionado()">
+    <option value="">Selecciona un usuario</option>
+    <option *ngFor="let usuario of usuarios" [value]="usuario.id">{{ usuario.id + "-" + usuario.nombre + "-" + usuario.correo }}</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" class="form-control" [(ngModel)]="usuario.nombre" name="nombre" required="true">
+</div>
+
+<div class="form-group">
+  <label for="correo">Email:</label>
+  <input type="email" id="correo" class="form-control" [(ngModel)]="usuario.correo" name="correo" required="true">
+</div>
+
+<div>
+  <button class="btn btn-primary" (click)="agregarUsuario()">
+    {{ usuarioSeleccionado ? 'Editar Usuario' : 'Agregar Usuario' }}
+  </button>
+  <button class="btn btn-danger" (click)="eliminarUsuario()" [disabled]="!usuarioSeleccionado">Eliminar</button>
+</div>
