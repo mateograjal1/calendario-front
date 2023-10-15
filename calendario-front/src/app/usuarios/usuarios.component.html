@@ -18,7 +18,7 @@
   <input type="email" id="correo" class="form-control" [(ngModel)]="usuario.correo" name="correo" required="true">
 </div>
 
-<div>
+<div class="botones-container">
   <button class="btn btn-primary" (click)="agregarUsuario()">
     {{ usuarioSeleccionado ? 'Editar Usuario' : 'Agregar Usuario' }}
   </button>

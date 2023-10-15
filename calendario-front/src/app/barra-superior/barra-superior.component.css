@@ -1,0 +1,16 @@
+li {
+  background-color: rgb(40, 90, 238);
+  border-radius: 10%;
+}
+
+li:hover {
+  background-color: white; /* Cambio de color de fondo al pasar el cursor */
+  color: blue; /* Cambio de color del texto al pasar el cursor */
+}
+
+
+h1{
+  color: blue;
+  bottom: 0;
+  width: 30%;
+};

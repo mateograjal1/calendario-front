@@ -9,26 +9,26 @@
       <div class="col-md-9">
         <!-- Panel lateral izquierdo -->
         <div class="panel panel-default" *ngIf="usuarioSeleccionado">
-          <div class="panel-heading">Detalles del Evento</div>
+          <div class="panel-heading"><h4>Detalles del Evento</h4></div>
           <div class="panel-body">
             <!-- Campo de título -->
             <div class="form-group">
-              <label for="titulo">Título:</label>
+              <label for="titulo"><h6>Título:</h6></label>
               <input type="text" class="form-control" id="titulo" [(ngModel)]="evento.titulo">
             </div>
             <!-- Campo de descripción -->
             <div class="form-group">
-              <label for="descripcion">Descripción:</label>
+              <label for="descripcion"><h6>Descripción:</h6></label>
               <textarea class="form-control" id="descripcion" [(ngModel)]="evento.descripcion"></textarea>
             </div>
             <!-- Campo de fecha -->
             <div class="form-group">
-              <label for="fecha">Fecha:</label>
+              <label for="fecha"><h6>Fecha:</h6></label>
               <input type="date" class="form-control" id="fecha" [(ngModel)]="evento.fecha">
             </div>
             <!-- Campo de lugar -->
             <div class="form-group">
-              <label for="lugar">Lugar:</label>
+              <label for="lugar"><h6>Lugar:</h6></label>
               <input type="text" class="form-control" id="lugar" [(ngModel)]="evento.lugar">
             </div>
             <button class="btn btn-primary" (click)="agregarEvento()">Agregar Evento</button>
@@ -40,26 +40,26 @@
     <div class="col-md-9 col-md-offset-3">
       <!-- Panel a la derecha con lista de eventos -->
       <div class="panel panel-default" *ngIf="usuarioSeleccionado">
-        <div class="panel-heading">Lista de Eventos</div>
+        <div class="panel-heading"><h4>Lista de Eventos</h4></div>
         <div class="panel-body">
           <ul class="list-group">
             <li class="list-group-item" *ngFor="let evento of eventos">
               <table class="table table-bordered">
                 <tbody>
                   <tr>
-                    <td>Titulo</td>
+                    <td><h6>Titulo</h6></td>
                     <td>{{ evento.titulo }}</td>
                   </tr>
                   <tr>
-                    <td>Descripción</td>
+                    <td><h6>Descripción</h6></td>
                     <td>{{ evento.descripcion }}</td>
                   </tr>
                   <tr>
-                    <td>Fecha</td>
+                    <td><h6>Fecha</h6></td>
                     <td>{{ evento.fecha }}</td>
                   </tr>
                   <tr>
-                    <td>Lugar</td>
+                    <td><h6>Lugar</h6></td>
                     <td>{{ evento.lugar }}</td>
                   </tr>
                 </tbody>

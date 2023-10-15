@@ -1,0 +1,40 @@
+h6{
+  color: blueviolet;
+};
+
+input {
+  border-radius: 5px; /* Ajusta el radio de las esquinas según tu preferencia */
+  border-color: black;
+  border-style: double;
+  border-width: 4px; /* Ajusta el ancho del borde según tu preferencia */
+};
+
+.list-group-item {
+  border-width: 50px; /* Ajusta el ancho del borde según tu preferencia */
+  border-style: solid; /* Puedes usar otros estilos de borde según tu preferencia, como dotted, dashed, etc. */
+  border-color: black; /* Color del borde */
+};
+
+.list-group-item button {
+  background-color: black; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+};
+
+.list-group-item button:hover {
+  background-color: purple; /* Color de fondo al pasar el cursor sobre el botón */
+};
+
+.list-group-item {
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+}
+
+.list-group-item button {
+  background-color: black;
+  color: white;
+}
+
+.list-group-item button:hover {
+  background-color: purple;
+};
